@@ -82,6 +82,6 @@ We evaluated different 2D block sizes using both global memory (without shared m
 
 The fastest execution time of $0.00160980\,\text{s}$ was achieved using shared memory with a block size of $(8, 8)$. Shared memory provides a better performance for smaller block configurations such as $(8, 8)$ and $(16, 16)$. \\
 
-Across configurations from $(16, 16)$ to $(32, 16)$, the running times remain quite similar with minimal difference between both versions. However, for $(32, 32)$ block size there is a large increase in execution time compared to $(32, 16)$ across both implementations due to maximum thread limits per block.
+Across configurations from $(16, 16)$ to $(32, 16)$, the running times remain quite similar with minimal difference between both versions. However, for $(32, 32)$ block size there is a large increase in execution time compared to $(32, 16)$ across both implementations. This may be due to the larger number of threads per block, which can reduce GPU efficiency.
 
 \end{document}
